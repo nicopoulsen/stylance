@@ -1,68 +1,99 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f6f2;
+    color: #333;
 }
 
 header {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: white;
+    background-color: #f5e6d3;
+    color: #5e503f;
 }
 
-nav {
-    margin-top: 10px;
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
 }
 
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
+header p {
+    font-size: 1.2em;
 }
 
 .stylist-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin: 20px;
 }
 
 .stylist {
     position: relative;
-    border: 2px solid #ccc;
+    border: 2px solid #d1c6b6;
     border-radius: 10px;
     overflow: hidden;
-    width: 200px;
-    transition: transform 0.3s;
+    width: 250px;
+    height: 250px;
+    transition: all 0.4s ease;
+    background-color: #ffffff;
+    cursor: pointer;
+    margin: 15px;
 }
 
 .stylist img {
     width: 100%;
     height: auto;
+    border-bottom: 1px solid #d1c6b6;
 }
 
 .stylist .info {
-    display: none; /* Hidden by default */
+    display: none;
+    padding: 15px;
+    background-color: #f5e6d3;
+    color: #5e503f;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-    overflow-y: auto; /* Allow scrolling */
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
 }
 
 .stylist:hover {
-    transform: scale(1.05);
+    width: 400px;
+    height: 400px;
+    z-index: 100;
 }
 
 .stylist:hover .info {
-    display: block; /* Show info on hover */
+    display: block;
+}
+
+.stylist h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.stylist p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Scrollbar Styles */
+.stylist .info::-webkit-scrollbar {
+    width: 8px;
+}
+
+.stylist .info::-webkit-scrollbar-thumb {
+    background-color: #5e503f;
+    border-radius: 4px;
+}
+
+.stylist .info::-webkit-scrollbar-track {
+    background-color: #f9f6f2;
 }
