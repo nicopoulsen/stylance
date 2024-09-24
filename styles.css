@@ -3,33 +3,29 @@ body {
     font-family: 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fafafa;
+    background-color: #faf3e0; /* Beige background */
     color: #333;
 }
 
 h1, h2 {
     font-family: 'Georgia', serif;
     font-weight: 700;
-    color: #333;
+    color: #5e503f;
 }
 
-h2 {
-    text-align: center;
-    margin-top: 40px;
+p {
+    color: #666;
+    line-height: 1.6;
 }
 
-/* Header Styles */
-.main-header {
-    background-color: #f5f5f5;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.main-header h1 {
-    margin-left: 20px;
-    font-size: 2em;
+/* Sticky Navigation Bar */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f5e6d3;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -46,12 +42,12 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #5e503f;
     font-weight: bold;
 }
 
 .join-button {
-    background-color: #333;
+    background-color: #5e503f;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -60,68 +56,199 @@ nav ul li a {
 }
 
 .join-button:hover {
-    background-color: #555;
+    background-color: #3f2f22;
 }
 
-/* Stylist Section */
-.stylist-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
+/* Hero Section */
+.hero-section {
+    background-color: #f5e6d3;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.stylist-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+.hero-content h1 {
+    font-size: 3em;
+    color: #5e503f;
+    margin: 0;
 }
 
-/* Stylist Cards */
-.stylist-card {
+.hero-content p {
+    font-size: 1.4em;
+    margin: 20px 0;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #5e503f;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.hero-button:hover {
+    background-color: #3f2f22;
+}
+
+/* Features Section */
+.features-section {
+    padding: 100px 20px;
+    background-color: #faf3e0;
+    text-align: center;
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.feature {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+    color: #5e503f;
+}
+
+/* Stylists Showcase Section with Hover Scroll */
+.showcase-section {
+    padding: 100px 20px;
+    background-color: #f5e6d3;
+    text-align: center;
+}
+
+.showcase-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.showcase-card {
+    width: 300px;
     background-color: white;
     border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     position: relative;
-    cursor: pointer;
+    height: 350px; /* Default size */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
-.stylist-card:hover {
+.showcase-card:hover {
     transform: scale(1.05);
+    height: 600px; /* Expanded height */
+    overflow: hidden; /* Keep content scrollable */
 }
 
-.stylist-image img {
+.showcase-card img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 250px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
 }
 
-.stylist-info {
+.showcase-info {
     padding: 15px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.9);
-    position: absolute;
-    bottom: -100%;
-    left: 0;
-    right: 0;
-    transition: bottom 0.3s ease;
-    height: 100%;
-    opacity: 0;
+    background-color: #fff;
+    flex-grow: 1;
+    overflow-y: auto;
+    height: 100px; /* Initial info height */
+    max-height: 100px;
+    transition: max-height 0.5s ease;
 }
 
-.stylist-card:hover .stylist-info {
-    bottom: 0;
-    opacity: 1;
+.showcase-card:hover .showcase-info {
+    max-height: 300px; /* Expanded height */
+    overflow-y: scroll;
 }
 
-.stylist-info h3 {
-    margin: 0;
+.showcase-info h3 {
     font-size: 1.4em;
+    color: #3f2f22;
 }
 
-.stylist-info p {
+.showcase-info p {
     font-size: 1em;
-    margin-top: 10px;
-    color: #555;
+    margin: 5px 0;
+}
+
+.showcase-info blockquote {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #5e503f;
+    margin: 15px 0;
+}
+
+.showcase-gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.showcase-gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Connect Button */
+.connect-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #5e503f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.connect-button:hover {
+    background-color: #3f2f22;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 100px 20px;
+    background-color: #faf3e0;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #5e503f;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.cta-button:hover {
+    background-color: #3f2f22;
+}
+
+/* Footer / Contact Section */
+footer {
+    padding: 50px 20px;
+    background-color: #f5e6d3;
+    text-align: center;
+}
+
+footer a {
+    color: #5e503f;
+    text-decoration: none;
 }

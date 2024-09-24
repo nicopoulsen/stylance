@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stylance - Meet Our Stylists</title>
+    <title>Stylance - Personalized Fashion Styling</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="main-header">
+    <!-- Sticky Navigation Bar -->
+    <header class="main-header sticky">
         <h1>Stylance</h1>
         <nav>
             <ul>
@@ -20,51 +21,103 @@
         </nav>
     </header>
 
-    <section id="stylists" class="stylist-section">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Discover Your Style</h1>
+            <p>Personalized styling from the best in the business.</p>
+            <a href="#stylists" class="hero-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2>Why Stylance?</h2>
+        <div class="features-container">
+            <div class="feature">
+                <h3>Personalized Styling</h3>
+                <p>Get a curated styling experience tailored just for you.</p>
+            </div>
+            <div class="feature">
+                <h3>Connect with Top Stylists</h3>
+                <p>Browse through a collection of talented, independent stylists and fashion experts.</p>
+            </div>
+            <div class="feature">
+                <h3>AI-Powered Suggestions</h3>
+                <p>Let our AI analyze your wardrobe and suggest the best outfits and stylists for you.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stylists Showcase Section with Hover Scroll -->
+    <section id="stylists" class="showcase-section">
         <h2>Meet Our Stylists</h2>
-        <div class="stylist-grid">
+        <div class="showcase-grid">
             <!-- Stylist 1 -->
-            <div class="stylist-card">
-                <div class="stylist-image">
-                    <img src="https://via.placeholder.com/300x400" alt="Stylist 1">
-                </div>
-                <div class="stylist-info">
+            <div class="showcase-card">
+                <img src="https://via.placeholder.com/300x400" alt="Stylist 1">
+                <div class="showcase-info">
                     <h3>Alex Fia</h3>
-                    <p>Specializes in editorial styling</p>
+                    <p>Editorial & High Fashion</p>
+                    <blockquote>"Fashion is the armor to survive the reality of everyday life."</blockquote>
+                    <div class="showcase-gallery">
+                        <img src="https://via.placeholder.com/150x150" alt="Outfit 1">
+                        <img src="https://via.placeholder.com/150x150" alt="Outfit 2">
+                        <img src="https://via.placeholder.com/150x150" alt="Outfit 3">
+                    </div>
+                    <!-- Connect Button -->
+                    <a href="stylist1.html" class="connect-button">Connect</a>
                 </div>
             </div>
+
             <!-- Stylist 2 -->
-            <div class="stylist-card">
-                <div class="stylist-image">
-                    <img src="https://via.placeholder.com/300x400" alt="Stylist 2">
-                </div>
-                <div class="stylist-info">
+            <div class="showcase-card">
+                <img src="https://via.placeholder.com/300x400" alt="Stylist 2">
+                <div class="showcase-info">
                     <h3>Cat Stirling</h3>
-                    <p>Outdoor and lifestyle fashion expert</p>
+                    <p>Outdoor & Lifestyle</p>
+                    <blockquote>"Style is a reflection of your attitude and personality."</blockquote>
+                    <div class="showcase-gallery">
+                        <img src="https://via.placeholder.com/150x150" alt="Outfit 1">
+                        <img src="https://via.placeholder.com/150x150" alt="Outfit 2">
+                        <img src="https://via.placeholder.com/150x150" alt="Outfit 3">
+                    </div>
+                    <!-- Connect Button -->
+                    <a href="stylist2.html" class="connect-button">Connect</a>
                 </div>
             </div>
+
             <!-- Stylist 3 -->
-            <div class="stylist-card">
-                <div class="stylist-image">
-                    <img src="https://via.placeholder.com/300x400" alt="Stylist 3">
-                </div>
-                <div class="stylist-info">
-                    <h3>Charlotte Lord</h3>
-                    <p>Children's fashion stylist</p>
-                </div>
-            </div>
-            <!-- Stylist 4 -->
-            <div class="stylist-card">
-                <div class="stylist-image">
-                    <img src="https://via.placeholder.com/300x400" alt="Stylist 4">
-                </div>
-                <div class="stylist-info">
+            <div class="showcase-card">
+                <img src="https://via.placeholder.com/300x400" alt="Stylist 3">
+                <div class="showcase-info">
                     <h3>Clare Frith</h3>
-                    <p>High fashion and editorial styling</p>
+                    <p>High Fashion & Editorial</p>
+                    <blockquote>"Simplicity is the ultimate sophistication."</blockquote>
+                    <div class="showcase-gallery">
+                        <img src="https://via.placeholder.com/150x150" alt="Outfit 1">
+                        <img src="https://via.placeholder.com/150x150" alt="Outfit 2">
+                        <img src="https://via.placeholder.com/150x150" alt="Outfit 3">
+                    </div>
+                    <!-- Connect Button -->
+                    <a href="stylist3.html" class="connect-button">Connect</a>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <h2>Get Styled Today</h2>
+        <p>Ready to elevate your style? Get started with Stylance and find your perfect stylist now.</p>
+        <a href="#stylists" class="cta-button">Find a Stylist</a>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Email us at <a href="mailto:info@stylance.com">info@stylance.com</a></p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
