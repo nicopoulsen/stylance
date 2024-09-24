@@ -56,8 +56,13 @@ nav a:hover {
     padding: 10px;
     width: 100%;
     height: 100%;
+    overflow-y: auto; /* Allow scrolling */
 }
 
 .stylist:hover {
     transform: scale(1.05);
+}
+
+.stylist:hover .info {
+    display: block; /* Show info on hover */
 }
