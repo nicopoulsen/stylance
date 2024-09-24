@@ -3,58 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stylance - Connect with Freelance Stylists</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Stylance - Find Your Stylist</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to Stylance</h1>
-        <p>Connect with freelance stylists!</p>
+        <h1>Stylance</h1>
+        <p>Connect with talented freelance stylists</p>
     </header>
-
-    <main>
-        <div class="stylist-container">
-            <div class="stylist" id="stylist1">
-                <img src="images/stylist1.jpg" alt="Stylist 1">
-                <div class="info">
-                    <h2>Stylist 1</h2>
-                    <p>Brief description about Stylist 1.</p>
-                </div>
-            </div>
-
-            <div class="stylist" id="stylist2">
-                <img src="images/stylist2.jpg" alt="Stylist 2">
-                <div class="info">
-                    <h2>Stylist 2</h2>
-                    <p>Brief description about Stylist 2.</p>
-                </div>
-            </div>
-
-            <div class="stylist" id="stylist3">
-                <img src="images/stylist3.jpg" alt="Stylist 3">
-                <div class="info">
-                    <h2>Stylist 3</h2>
-                    <p>Brief description about Stylist 3.</p>
-                </div>
+    <div class="stylist-container">
+        <div class="stylist">
+            <img src="images/stylist1.jpg" alt="Stylist 1">
+            <div class="info">
+                <h3>Stylist 1</h3>
+                <p>Expert in casual and chic styles.</p>
             </div>
         </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Stylance. All rights reserved.</p>
-    </footer>
-
-    <script>
-        // Add hover effect
-        const stylists = document.querySelectorAll('.stylist');
-        stylists.forEach(stylist => {
-            stylist.addEventListener('mouseenter', () => {
-                stylist.querySelector('.info').style.display = 'block';
-            });
-            stylist.addEventListener('mouseleave', () => {
-                stylist.querySelector('.info').style.display = 'none';
-            });
-        });
-    </script>
+        <div class="stylist">
+            <img src="images/stylist2.jpg" alt="Stylist 2">
+            <div class="info">
+                <h3>Stylist 2</h3>
+                <p>Specializes in formal and elegant looks.</p>
+            </div>
+        </div>
+        <div class="stylist">
+            <img src="images/stylist3.jpg" alt="Stylist 3">
+            <div class="info">
+                <h3>Stylist 3</h3>
+                <p>Trendy outfits and fashion advice.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
