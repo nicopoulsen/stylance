@@ -3,77 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylance - Meet Our Stylists</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Stylance - Find Your Stylist</title>
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <h1>Stylance</h1>
-        <p>Connect with talented freelance stylists</p>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#stylists">Stylists</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="join-button">Join Us</button>
         </nav>
     </header>
-    
-    <!-- Home Section -->
-    <section id="home">
-        <div class="stylist-container">
-            <div class="stylist">
-                <img src="https://via.placeholder.com/200" alt="Stylist 1">
-                <div class="info">
-                    <h3>Stylist 1</h3>
-                    <p>Age: 28</p>
-                    <p>Rating: ★★★★☆</p>
-                    <p>About: Expert in casual and chic styles. With a passion for fashion, Stylist 1 ensures that clients look their best for both everyday wear and special occasions.</p>
-                </div>
-            </div>
-            
-            <div class="stylist">
-                <img src="https://via.placeholder.com/200" alt="Stylist 2">
-                <div class="info">
-                    <h3>Stylist 2</h3>
-                    <p>Age: 32</p>
-                    <p>Rating: ★★★★★</p>
-                    <p>About: Specializes in formal and elegant looks, creating polished, high-end, red-carpet-ready outfits for prestigious clients.</p>
-                </div>
-            </div>
 
-            <div class="stylist">
-                <img src="https://via.placeholder.com/200" alt="Stylist 3">
-                <div class="info">
-                    <h3>Stylist 3</h3>
-                    <p>Age: 25</p>
-                    <p>Rating: ★★★★☆</p>
-                    <p>About: Known for trendy, fashion-forward outfits and expert advice. Stylist 3 helps clients keep up with the latest trends while ensuring that each look is uniquely tailored to the individual’s style.</p>
+    <section id="stylists" class="stylist-section">
+        <h2>Meet Our Stylists</h2>
+        <div class="stylist-grid">
+            <!-- Stylist 1 -->
+            <div class="stylist-card">
+                <div class="stylist-image">
+                    <img src="https://via.placeholder.com/300x400" alt="Stylist 1">
+                </div>
+                <div class="stylist-info">
+                    <h3>Alex Fia</h3>
+                    <p>Specializes in editorial styling</p>
+                </div>
+            </div>
+            <!-- Stylist 2 -->
+            <div class="stylist-card">
+                <div class="stylist-image">
+                    <img src="https://via.placeholder.com/300x400" alt="Stylist 2">
+                </div>
+                <div class="stylist-info">
+                    <h3>Cat Stirling</h3>
+                    <p>Outdoor and lifestyle fashion expert</p>
+                </div>
+            </div>
+            <!-- Stylist 3 -->
+            <div class="stylist-card">
+                <div class="stylist-image">
+                    <img src="https://via.placeholder.com/300x400" alt="Stylist 3">
+                </div>
+                <div class="stylist-info">
+                    <h3>Charlotte Lord</h3>
+                    <p>Children's fashion stylist</p>
+                </div>
+            </div>
+            <!-- Stylist 4 -->
+            <div class="stylist-card">
+                <div class="stylist-image">
+                    <img src="https://via.placeholder.com/300x400" alt="Stylist 4">
+                </div>
+                <div class="stylist-info">
+                    <h3>Clare Frith</h3>
+                    <p>High fashion and editorial styling</p>
                 </div>
             </div>
         </div>
-
-        <!-- Subscription Section -->
-        <section class="subscribe">
-            <h2>Subscribe for Updates</h2>
-            <p>Enter your email to receive the latest stylist updates and tips:</p>
-            <form action="#">
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit">Subscribe</button>
-            </form>
-        </section>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Stylance</h2>
-        <p>Stylance is dedicated to connecting people with top freelance stylists who can bring their fashion dreams to life.</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>For inquiries, reach out to us at <a href="mailto:info@stylance.com">info@stylance.com</a></p>
     </section>
 
     <script src="script.js"></script>
